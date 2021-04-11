@@ -2,17 +2,19 @@
 
 void main(void)
 {
-    int val;
+    int input, thr;
+
+    thr = 10;
 
     printf("Input integral value >>");
-    scanf("%d", &val);
+    scanf("%d", &input);
 
-    if (val < 10)
+    if (input < thr)
     {
-        printf("Input value is smaller than 10.");
+        printf("Input value is smaller than %d.", thr);
     }
     else
     {
-        printf("Input value is bigger than 10.");
+        printf("Input value is bigger than %d.", thr);
     }
 }
